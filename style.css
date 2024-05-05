@@ -1,8 +1,11 @@
+/* Default styles */
+
 #title {
   text-align: center;
   color: blue;
   text-shadow: 2px 2px 5px red;
 }
+
 #img {
   float: left;
   height: 90px;
@@ -16,15 +19,18 @@
   color: red;
   text-shadow: 1px 1px 2px white;
 }
+
 body {
-  background-image:url(./Photos/body.jpg);
+  background-image: url(./Photos/body.jpg);
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
+
 .form-box {
   position: relative;
   width: 400px;
@@ -35,18 +41,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.form-box {
   color: white;
   text-align: center;
   font-size: 32px;
 }
+
 .form-box .input-box {
   position: relative;
   margin: 30px 0;
   width: 310px;
   border-bottom: 2px solid white;
 }
+
 .form-box .input-box input {
   width: 100%;
   height: 45px;
@@ -64,9 +70,11 @@ i {
   top: 13px;
   right: 0;
 }
+
 input::placeholder {
   color: white;
 }
+
 .btn {
   color: white;
   background: blue;
@@ -80,10 +88,12 @@ input::placeholder {
   box-shadow: 3px 0 10px rgba(0, 0, 0, 5);
   text-align: center;
 }
+
 .group {
   display: flex;
   justify-content: space-between;
 }
+
 .group span a {
   color: white;
   position: relative;
@@ -91,16 +101,19 @@ input::placeholder {
   text-decoration: none;
   font-weight: 500;
 }
+
 .group a:focus {
   text-decoration: underline;
 }
+
 #result {
   color: red;
   font-weight: 100;
   position: relative;
   top: 10px;
 }
-.pupup {
+
+.popup {
   width: 400px;
   background-color: white;
   border-radius: 6px;
@@ -108,16 +121,18 @@ input::placeholder {
   top: 0;
   left: 50px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transfrom 0.4s, top 0.5s;
+  transition: transform 0.4s, top 0.5s;
   text-align: center;
   padding: 0 30px 30px;
   height: 330px;
   color: black;
 }
+
 .popup ion-icon {
   color: green;
   font-size: 50px;
 }
+
 .popup button {
   width: 100%;
   background: green;
@@ -131,16 +146,19 @@ input::placeholder {
   cursor: pointer;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
 }
+
 .popup a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .open-slide {
   top: 50%;
-  transform: translate(-50% -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
+
 #buttonList {
   display: flex;
   position: absolute;
@@ -148,6 +166,7 @@ input::placeholder {
   color: greenyellow;
   margin-right: 10;
 }
+
 #click {
   margin: 50px;
   background-color: chartreuse;
@@ -161,7 +180,41 @@ input::placeholder {
   font-size: medium;
 }
 
-#name{
+#name {
   text-align: center;
   color: yellow;
+}
+
+/* Media Query for all devices */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  #title {
+    font-size: 24px;
+  }
+  #img {
+    float: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form-box {
+    width: 80%;
+    height: auto;
+    font-size: 24px;
+  }
+  .form-box .input-box {
+    width: 100%;
+  }
+  .form-box .input-box input {
+    height: 40px;
+    font-size: 14px;
+  }
+  .btn {
+    height: 45px;
+    font-size: 16px;
+  }
+  #buttonList {
+    font-size: 12px;
+  }
 }
