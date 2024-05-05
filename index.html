@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <title>College Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <hr>
+    <hr>
+    <header>
+        <h1 id="title"><img src="./Photos/siet.jpg" id="img" alt="Not There">
+            Siddhartha Institute of Engineering & Technology
+        </h1>
+        <h3 id="siet">Siddharta Insitute Gallery </h3>
+    </header>
+
+    <hr>
+    <hr>
+    <!-- Sign Up Form -->
+    <div class="container">
+        <div class="form-box">
+            <form action="login.html" id="signupForm" name="Fromfill" onsubmit="return validation()">
+                <h2>Sign Up</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class='bx bx-user-circle'></i>
+                    <input type="text" name="Username" id="username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock'></i>
+                    <input type="password" name="Password" id="password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock'></i>
+                    <input type="password" name="CPassword" id="password" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Sing Up">
+                </div>
+
+            </form>
+        </div>
+        <br><br>
+        <!-- Login In Form -->
+        <div class="container">
+            <div class="form-box">
+                <form action=""  id="loginForm">
+                    <h2>Login In</h2>
+
+                    <div class="input-box">
+                        <i class='bx bx-user-circle'></i>
+                        <input type="text" id="loginUsername" name="username" placeholder="Enter Username">
+                    </div>
+                    <div class="input-box">
+                        <i class='bx bxs-lock'></i>
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter Password">
+                    </div>
+                    <div class="button">
+                        <button type="login" class="btn" value="submit"> Login</button>
+                    </div>
+                </form>
+            </div>
+            <script src="script.js"></script>
+
+</body>
+
+</html>
